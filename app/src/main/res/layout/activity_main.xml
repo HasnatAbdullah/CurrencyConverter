@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:hint="Select Money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="32dp"
+
+        />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:hint="Select Money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="32dp"
+
+        />
+
+    <EditText
+        android:id="@+id/InputEditText"
+        android:hint="Input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:textSize="32dp"
+        android:ems="20"
+        android:inputType="number" />
+
+    <requestFocus />
+
+        <TextView
+            android:id="@+id/OutputTextView"
+            android:hint="Output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="32dp"
+            android:text=""
+            />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:onClick="onClick"
+    />
+
+    </LinearLayout>
